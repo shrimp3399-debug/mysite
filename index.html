@@ -1,11 +1,129 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>내 프로필</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>My Profile</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0f;
+    color: #e4e4e7;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    background-color: #16161a;
+    border: 1px solid #27272a;
+    border-radius: 16px;
+    padding: 45px 35px;
+    text-align: center;
+    max-width: 420px;
+    width: 85%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .avatar-box {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 2px solid #3f3f46;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202024;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .title {
+    font-size: 26px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    letter-spacing: 1px;
+  }
+
+  .bio {
+    font-size: 14px;
+    font-weight: bold;
+    color: #a1a1aa;
+    margin: 0 0 28px 0;
+    line-height: 1.5;
+  }
+
+  .badge {
+    display: inline-block;
+    background-color: #27272a;
+    color: #f4f4f5;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .links a {
+    color: #d4d4d8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid #2e2e32;
+    border-radius: 8px;
+    background-color: #1c1c21;
+    transition: all 0.2s ease;
+  }
+
+  .links a:hover {
+    background-color: #ffffff;
+    color: #0d0d0f;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+  }
+</style>
 </head>
-<body style="text-align: center; margin-top: 100px; font-family: sans-serif;">
-  <h1>반갑습니다!</h1>
-  <p>제 디스코드 프로필에서 연결된 사이트입니다.</p>
+<body>
+
+  <div class="card">
+    <div class="avatar-box">
+      <img src="https://i.imgur.com/9TTfb7c.png" alt="Burger Profile">
+    </div>
+
+    <h1 class="title">Screech</h1>
+    <p class="bio">just floating around on the internet.</p>
+
+    <div class="badge">Links & Socials</div>
+
+    <div class="links">
+      <a href="https://discord.gg/fdDv4Hd27J" target="_blank">Discord</a>
+      <a href="https://www.roblox.com/ko/users/4284058876/profile" target="_blank">Roblox</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+  </div>
+
 </body>
 </html>
